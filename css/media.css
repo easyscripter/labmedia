@@ -1,0 +1,121 @@
+@media screen and (max-width: 699px) {
+
+    header,
+    main {
+        padding: 0 15px;
+    }
+
+    header::after {
+        display: none;
+    }
+
+    .phone-features br,
+    .accesories-content br,
+    .camera-features br {
+        content: ""
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .phone-features {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(0, auto);
+        font-size: 12px;
+    }
+
+    .display_feature {
+        width: 100%;
+    }
+
+    .phone-features .wrapper {
+        order: 2;
+    }
+
+    .backside_feature {
+        width: 100%;
+        order: 3;
+    }
+
+    .camera-content {
+        flex-direction: column;
+    }
+
+    .camera-features div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .camera-features .feature-icon {
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+
+    .accesories-content {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    .accesories-block {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .accesories-image {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+    header,
+    main {
+        padding: 0 15px;
+    }
+
+
+    .phone-features br,
+    .accesories-content br {
+        content: ""
+    }
+
+
+    .phone-features {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .phone-features .wrapper {
+        grid-column: 1/3;
+    }
+
+    .phone-features div {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .camera-features div {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .accesories-content {
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 80px;
+    }
+
+    .accesories-block {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .accesories-wrapper {
+        grid-column: 1/3;
+        grid-column-gap: 4.5em;
+    }
+
+    .accesories-image {
+        margin: 0 auto;
+    }
+}

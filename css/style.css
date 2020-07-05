@@ -1,0 +1,219 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Medium'), local('PTRootUI-Medium'), url('/fonts/Ptrootuimedium.woff2') format('woff2'), url('/fonts/Ptrootuimedium.woff') format('woff'), url('/fonts/Ptrootuimedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Light'), local('PTRootUI-Light'), url('/fonts/Ptrootuilight.woff2') format('woff2'), url('/fonts/Ptrootuilight.woff') format('woff'), url('/fonts/Ptrootuilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI'), local('PTRootUI-Regular'), url('/fonts/Ptrootui.woff2') format('woff2'), url('/fonts/Ptrootui.woff') format('woff'), url('/fonts/Ptrootui.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Bold'), local('PTRootUI-Bold'), url('/fonts/Ptrootuibold.woff2') format('woff2'), url('/fonts/Ptrootuibold.woff') format('woff'), url('/fonts/Ptrootuibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Root UI', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 25px;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    height: 2px;
+    background-color: red;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+}
+
+.open {
+    display: flex;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+}
+
+.menu ul {
+    margin: 10px 15px;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    padding: 0 25px;
+}
+
+main h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2.7rem;
+}
+
+main h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2.1rem;
+}
+
+.header-logo-block img {
+    padding: 10px;
+}
+
+.header-burger-icon svg:hover {
+    stroke: black;
+    cursor: pointer;
+}
+
+.header-title {
+    flex-grow: 2;
+}
+
+.design-description {
+    margin: 60px 0;
+}
+
+.phone-features {
+    display: grid;
+    grid-template-columns: 26% 24% 48% 2%;
+    grid-gap: 10px;
+}
+
+.phone-features div img {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.phone-features div p {
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.display_feature {
+    max-width: 300px;
+    max-height: 340px;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: #171717;
+    color: #ffffff;
+}
+
+.backside_feature,
+.color_feature,
+.glass_feature {
+    padding: 18px;
+    max-width: 300px;
+}
+
+.phone-features .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.camera-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camera-content img {
+    max-height: 250px;
+}
+
+.camera-features div {
+    display: flex;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.camera-features div .feature-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.accesories-content {
+    display: grid;
+    grid-template-columns: 25% 25% 48% 2%;
+}
+
+.accesories-block {
+    max-width: 300px;
+}
+
+.accesories-block img {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accesories-content .accesories-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+}
+
+.accesories-wrapper .accesories-block,
+.accesories-wrapper .accesories-block {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.accesories-wrapper .accesories-block::before,
+.accesories-wrapper .accesories-block::before {
+    content: "";
+    position: relative;
+    top: -1px;
+    display: block;
+    width: 20%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.accesories-text {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
