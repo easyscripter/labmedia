@@ -1,4 +1,4 @@
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 670px) {
 
     header,
     main {
@@ -21,12 +21,19 @@
 
     .phone-features {
         grid-template-columns: 1fr;
-        grid-auto-rows: minmax(0, auto);
         font-size: 12px;
     }
 
     .display_feature {
-        width: 100%;
+        max-width: 100%;
+    }
+
+    .backside_feature,
+    .color_feature,
+    .glass_feature {
+        padding: 5px;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .phone-features .wrapper {
@@ -66,9 +73,31 @@
     .accesories-image {
         width: 80%;
     }
+
+    .services-content {
+        grid-template-columns: 1fr;
+    }
+
+    .services-block {
+        flex-direction: row-reverse;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .services-block:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .services-block {
+        width: 100%;
+    }
+
+    .accesories-text {
+        white-space: normal;
+    }
 }
 
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 671px) and (max-width: 900px) {
 
     header,
     main {
@@ -117,5 +146,15 @@
 
     .accesories-image {
         margin: 0 auto;
+    }
+
+    .accesories-text {
+        white-space: normal;
+    }
+
+    .services .services-text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 21px;
     }
 }

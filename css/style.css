@@ -135,8 +135,7 @@ main h2 {
 }
 
 .display_feature {
-    max-width: 300px;
-    max-height: 340px;
+    max-width: 270px;
     padding: 18px;
     border-radius: 5px;
     background-color: #171717;
@@ -146,8 +145,9 @@ main h2 {
 .backside_feature,
 .color_feature,
 .glass_feature {
-    padding: 18px;
-    max-width: 300px;
+    padding: 5px;
+    max-width: 250px;
+    max-height: 300px;
 }
 
 .phone-features .wrapper {
@@ -158,11 +158,10 @@ main h2 {
 
 .camera-content {
     display: flex;
-    justify-content: space-between;
 }
 
 .camera-content img {
-    max-height: 250px;
+    max-height: 350px;
 }
 
 .camera-features div {
@@ -179,6 +178,7 @@ main h2 {
 .accesories-content {
     display: grid;
     grid-template-columns: 25% 25% 48% 2%;
+    margin-bottom: 62px;
 }
 
 .accesories-block {
@@ -216,4 +216,29 @@ main h2 {
     margin-top: 20px;
     font-size: 14px;
     font-weight: 500;
+    white-space: nowrap;
+}
+
+.services-description {
+    margin-bottom: 500px;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: start;
+}
+
+.services-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 21px;
 }
